@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # Load saved model, scaler, and expected columns
-model = joblib.load("kNN_heart.pkl")
+model = joblib.load("KNN_heart.pkl")
 scaler = joblib.load("scaler.pkl")
 expected_columns = joblib.load("columns.pkl")
 
@@ -64,4 +64,5 @@ if st.button("Predict"):
     else:
 
         st.success("✅ Low Risk of Heart Disease")
+
 
